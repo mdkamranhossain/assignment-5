@@ -15,7 +15,7 @@
      </style>
 
 </head>
-<body id="body" class="bg-[#F4F7FF] min-h-screen py-4 font-poppins">
+<body id="body" class="bg-sky-50 min-h-screen py-4 font-poppins">
     
     <!-- Header Section -->
     <header class="container mx-auto px-3">
@@ -32,7 +32,7 @@
                      <h1 class="text-xl font-bold">23</h1>
                 </div>
                 <div>
-                    <img class="bg-[#F4F7FF] px-2 py-2 rounded-full w-12" src="./assets/theme-btn.png" alt="">
+                    <img id="bg-btn" class="bg-[#F4F7FF] px-2 py-2 rounded-full w-12 cursor-pointer" src="./assets/theme-btn.png" alt="">
                 </div>
             </div>
 
@@ -71,7 +71,7 @@
                     </div>
                     <div class="">
                         <h1 class="text-xl">Wed</h1>
-                        <h1 class="text-xl font-bold">August 20 2025</h1>
+                        <h1 id="todays-date" class="text-xl font-bold"></h1>
                     </div>
                 </div>
              </div>
@@ -193,7 +193,7 @@
                 <h2>Activity Log</h2>
                 </div>
                 <div class="text-center mt-5">
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary">Clear History</button>
                 </div>
              </div>
              <!-- Dashed Border -->
