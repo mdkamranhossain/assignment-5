@@ -29,7 +29,7 @@
             <div class="flex gap-4 items-center">
                 <div class="flex gap-2 items-center bg-[#F4F7FF] px-4 py-2 rounded-full">
                     <img class="w-4" src="./assets/checkbox.png" alt="checkbox png">
-                     <h1 class="text-xl font-bold">23</h1>
+                     <h1 id="num" class="text-xl font-bold">23</h1>
                 </div>
                 <div>
                     <img id="bg-btn" class="bg-[#F4F7FF] px-2 py-2 rounded-full w-12 cursor-pointer" src="./assets/theme-btn.png" alt="">
@@ -51,7 +51,7 @@
                     <div><img src="./assets/checkbox.png" alt=""></div>
                     <div>
                         <h1 class="text-xl">Task Assigned</h1>
-                        <h1 class="text-xl font-bold">6</h1>
+                        <h1 id="task-number" class="text-xl font-bold">6</h1>
                     </div>
                 </div>
                 <!-- Left Middle Section -->
@@ -70,7 +70,7 @@
                         <img src="./assets/calender.png" alt="calendar png">
                     </div>
                     <div class="">
-                        <h1 class="text-xl">Wed</h1>
+                        <h1 id="current-day" class="text-xl"></h1>
                         <h1 id="todays-date" class="text-xl font-bold"></h1>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="card card-md shadow-sm bg-[#F4F7FF]">
                     <div class="card-body">
                      <small>ShopEase</small> 
-                      <h2><span class="card-title">Fix Mobile Button Issue </span></h2>
+                      <h2><span id="card-title" class="card-title">Fix Mobile Button Issue </span></h2>
                       <p class="px-3 py-5 bg-white rounded-lg text-gray-500 mt-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="justify-between card-actions items-center mt-5">
@@ -95,7 +95,7 @@
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn" class="btn btn-primary card-btn">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -104,14 +104,14 @@
                 <div class="card card-md shadow-sm bg-[#F4F7FF]">
                     <div class="card-body">
                      <small>CloudSync</small> 
-                      <h2><span class="card-title">Add Dark Mode</span></h2>
+                      <h2><span id="card-title-two" class="card-title">Add Dark Mode</span></h2>
                       <p class="px-3 py-5 bg-white rounded-lg text-gray-500 mt-5">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                       <div class="justify-between card-actions items-center mt-5">
                         <div class="">
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn-two" class="card-btns btn btn-primary">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn-three" class="btn btn-primary">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn-four" class="btn btn-primary">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,7 @@
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn-five" class="btn btn-primary">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -175,7 +175,7 @@
                             <small class="text-gray-500">Deadline</small>
                             <p class="text-sm">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button id="card-btn-six" class="btn btn-primary">Completed</button>
                       </div>
                     </div>
                   </div>
@@ -193,18 +193,23 @@
                 <h2>Activity Log</h2>
                 </div>
                 <div class="text-center mt-5">
-                    <button class="btn btn-primary">Clear History</button>
+                    <button id="clear" class="btn btn-primary">Clear History</button>
                 </div>
              </div>
              <!-- Dashed Border -->
             <div class="border-b border-dashed border-gray-300 mt-10"></div>
             <!-- Message -->
-             
-        <p class="text-center mt-5 text-left bg-[#F4F7FF] p-8 text-gray-600 rounded-lg mb-5">You have Complete The Task Add Dark Mode at 12:48:15 PM<p>
-        <p class="text-center mt-5 text-left bg-[#F4F7FF] p-8 text-gray-600 rounded-lg mb-5">You have Complete The Task Add Dark Mode at 12:48:15 PM<p>
+
+          <p id="sms-title" class=""></p>
 
         </div>
     </section>
+
+
+
+
+
+
 
     <script src="./JS/app.js"></script>
 </body>
