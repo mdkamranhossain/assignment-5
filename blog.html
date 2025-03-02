@@ -44,32 +44,38 @@
         <h1 class=" text-md md:text-xl font-bold">Question-1: What are the different ways to select an element in DOM?</h1>
         <!-- Dashed Border -->
         <div class="border-b border-dashed border-gray-300 my-5"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio, itaque excepturi a nemo fugit ullam temporibus eveniet molestias corporis. Laudantium commodi</p>
+        <p>Elements in the DOM can be selected in various ways. Selecting by ID targets a unique element, while selecting by class name retrieves multiple elements sharing the same class. Using tag names allows selection based on specific HTML tags. The name attribute method is useful for selecting form elements. The query selector provides flexibility by using CSS selectors to select either a single or multiple elements. The closest method finds the nearest ancestor that matches a given selector. Lastly, parent-child traversal enables navigation through parent, child, or sibling elements within the DOM structure.</p>
         </div>
 
         <div class="bg-white p-5 rounded-lg mt-5">
-            <h1 class=" text-md md:text-xl font-bold">Question-1: What are the different ways to select an element in DOM?</h1>
+            <h1 class=" text-md md:text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
             <!-- Dashed Border -->
             <div class="border-b border-dashed border-gray-300 my-5"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio, itaque excepturi a nemo fugit ullam temporibus eveniet molestias corporis. Laudantium commodi</p>
+            <p>The properties `innerHTML`, `innerText`, and `textContent` differ in how they handle content within an element. `innerHTML` retrieves or modifies the entire HTML content, including any embedded tags, making it useful for dynamically updating HTML structures. `innerText` extracts only the visible text, ignoring hidden elements and formatting text as displayed on the page, without processing HTML tags. `textContent` retrieves all text within an element, including hidden content, but treats everything as plain text without interpreting HTML. Choosing the right property depends on whether the goal is to manipulate HTML, extract visible text, or retrieve raw content from the DOM.</p>
         </div>
         <div class="bg-white p-5 rounded-lg mt-5">
-            <h1 class=" text-md md:text-xl font-bold">Question-1: What are the different ways to select an element in DOM?</h1>
+            <h1 class=" text-md md:text-xl font-bold">Question-3: What is event delegation in the DOM? </h1>
             <!-- Dashed Border -->
             <div class="border-b border-dashed border-gray-300 my-5"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio, itaque excepturi a nemo fugit ullam temporibus eveniet molestias corporis. Laudantium commodi</p>
+            <p>Event delegation in the DOM is a technique where a parent element handles events for its child elements, even if they are added dynamically. Instead of attaching event listeners to multiple individual elements, a single listener is placed on a common ancestor. This works because events in JavaScript bubble up from the target element to its parents.This approach improves performance by reducing the number of event listeners, making it especially useful for handling dynamic content where new elements may be added or removed without requiring additional event bindings.</p>
         </div>
         <div class="bg-white p-5 rounded-lg mt-5">
-            <h1 class=" text-md md:text-xl font-bold">Question-1: What are the different ways to select an element in DOM?</h1>
+            <h1 class=" text-md md:text-xl font-bold">Question-4: What is event bubbling in the DOM? </h1>
             <!-- Dashed Border -->
             <div class="border-b border-dashed border-gray-300 my-5"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio, itaque excepturi a nemo fugit ullam temporibus eveniet molestias corporis. Laudantium commodi</p>
+            <p>Event bubbling in the DOM is a process where an event triggered on a child element propagates upward through its parent elements until it reaches the root of the document. When an event occurs, it first executes on the target element and then "bubbles" up through its ancestors in the hierarchy.  This behavior allows parent elements to listen for events from their children without directly attaching event listeners to each child. Event bubbling is useful for event delegation but can also lead to unintended side effects if not managed properly, such as triggering multiple event handlers unintentionally.</p>
         </div>
         <div class="bg-white p-5 rounded-lg mt-5">
-            <h1 class=" text-md md:text-xl font-bold">Question-1: What are the different ways to select an element in DOM?</h1>
+            <h1 class=" text-md md:text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
             <!-- Dashed Border -->
             <div class="border-b border-dashed border-gray-300 my-5"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio, itaque excepturi a nemo fugit ullam temporibus eveniet molestias corporis. Laudantium commodi</p>
+            <p>In JavaScript, elements can be created, added, and removed dynamically using various DOM methods.
+
+                To create an element, the document.createElement() method is used, which generates a new element but does not place it in the DOM yet.
+                
+                To add the created element, methods like appendChild() and append() insert it into a parent element, while insertBefore() allows adding it before a specific child.
+                
+                To remove an element, the remove() method can be used directly on the element, or removeChild() can be applied to its parent to remove a specific child. These methods provide flexibility in manipulating the DOM dynamically.</p>
         </div>
 
         
